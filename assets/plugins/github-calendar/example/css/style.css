@@ -10,8 +10,16 @@
     font-size: 25px;
 }
 
+h2.f4.text-normal.mb-2{
+    display: none;
+}
+
 .monospace {
     font-family: 'Cutive Mono', monospace !important;
+}
+.contrib-legend.text-gray{
+    display: none;
+    padding: 0;
 }
 
 
@@ -31,7 +39,9 @@ pre {
 }
 
 .calendar {
-    margin-bottom: 10px;
+    
+    font-family: Helvetica, arial;
+    text-align: center;
 }
 
 p {

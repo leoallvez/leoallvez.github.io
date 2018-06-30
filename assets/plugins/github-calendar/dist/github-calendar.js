@@ -40,7 +40,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                 o = e("add-subtract-date"),
                 u = e("formatoid");
             t.exports = function (e, t, r) {
-                e = a(e), (r = r || {}).summary_text = r.summary_text || 'Resumo de solicitações dos pull requests, issues abertas e commits realizadas por <a href="https://github.com/' + t + '" target="blank">@' + t + "</a>", !1 === r.global_stats && (e.style.minHeight = "175px"), r.proxy = r.proxy || function (e) {
+                e = a(e), (r = r || {}).summary_text = r.summary_text || '<span>Resumo dos pull requests, issues abertas e commits realizadas por <a href="https://github.com/' + t + '" target="blank">@' + t + "</a>", !1 === r.global_stats && (e.style.minHeight = "175px"), r.proxy = r.proxy || function (e) {
                     return "https://urlreq.appspot.com/req?method=GET&url=" + e
                 };
                 return function s() {
@@ -64,7 +64,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                                     b = p.current_streak ? u(p.current_streak_range[0], "D MMMM ") + " – " + u(p.current_streak_range[1], "D MMMM") : p.last_contributed ? "Última contribuição em " + u(p.last_contributed, "D MMMM ") + "." : "Rock - Hard Place",
                                     m = p.longest_streak ? u(p.longest_streak_range[0], "D MMMM ") + " – " + u(p.longest_streak_range[1], "D MMMM") : p.last_contributed ? "Última contribuição em " + u(p.last_contributed, "D MMMM") + "." : "Rock - Hard Place",
                                     g = a("<div>", {
-                                        class: "contrib-column contrib-column-first table-column",
+                                        class: "contrib-column table-column",
                                         html: '<span class="text-muted">Contribuições no último ano</span>\n <span class="contrib-number">total ' + p.last_year + '</span>\n <span class="text-muted">' + u(o.subtract(new Date, 1, "year"), "MMM D, YYYY") + " – " + u(new Date, "MMM D, YYYY") + "</span>"
                                     }),
                                     h = a("<div>", {
@@ -73,11 +73,17 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                                     }),
                                     y = a("<div>", {
                                         class: "contrib-column table-column",
-                                        html: '<span class="text-muted">Contribuições consecutivas</span>\n <span class="contrib-number">' + p.current_streak + ' dias</span>\n <span class="text-muted">' + b + "</span>"
+                                        html: '<span class="text-muted">contribuições consecutivas</span>\n <span class="contrib-number">' + p.current_streak + ' dias</span>\n <span class="text-muted">' + b + "</span>"
                                     });
                                 c.appendChild(g), c.appendChild(h), c.appendChild(y)
                             }
                             e.innerHTML = c.innerHTML
+
+                            var text = $("h2.f4.text-normal.mb-2").text();
+                            console.log(text.match(/\d+/g).map(Number)[0]);
+                            $("h2.f4.text-normal.mb-2").text(text.match(/\d+/g).map(Number)[0] + " contribuições no último ano");
+                            $("h2.f4.text-normal.mb-2").show();
+                           
                         }
                     }).catch(function (e) {
                         return console.error(e)
@@ -144,10 +150,8 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                 return "string" == typeof e ? "<" === e.charAt(0) ? (e = document.createElement(e.slice(1, -1)), a(t || {}, function (t, r) {
                     switch (r) {
                         case "text":
-                            console.log(t);
                             return void (e.textContent = t);
                         case "html":
-                            console.log(t);
                             return void (e.innerHTML = t)
                     }
                     e.setAttribute(r, t)
