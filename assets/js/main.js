@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
     
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-    
+    /** 
     $("#rss-feeds").rss(
     
         //Change this to your own rss feeds
@@ -53,6 +53,7 @@ jQuery(document).ready(function($) {
         
         }
     );
+    */
     
     /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
     GitHubCalendar("#github-graph", "IonicaBizau");
