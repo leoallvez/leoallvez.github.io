@@ -80,7 +80,6 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                             e.innerHTML = c.innerHTML
 
                             var text = $("h2.f4.text-normal.mb-2").text();
-                            console.log(text.match(/\d+/g).map(Number)[0]);
                             $("h2.f4.text-normal.mb-2").text(text.match(/\d+/g).map(Number)[0] + " contribuições no último ano");
                             $("h2.f4.text-normal.mb-2").show();
                            
