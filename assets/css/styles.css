@@ -7,6 +7,56 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 /* ======= Base ======= */
+@import url(../../dist/github-calendar.css);
+@import url(https://cdn.rawgit.com/IonicaBizau/bag.css/gh-pages/dist/bag.fixed.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+.bag > h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+h2.f4.text-normal.mb-2{
+  display: none;
+}
+
+.monospace {
+  font-family: 'Cutive Mono', monospace !important;
+}
+.contrib-legend.text-gray{
+  display: none;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Cutive Mono', monospace;
+}
+
+@media(min-width:992px){.bag.fixed{width: 784px;}}
+
+pre {
+  background: white;
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 3px;
+  color: #373727;
+}
+
+.calendar {
+  width: 100%;
+  font-family: Helvetica, arial;
+  text-align: center;
+}
+
+p {
+  color: #444444;
+}
+
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
