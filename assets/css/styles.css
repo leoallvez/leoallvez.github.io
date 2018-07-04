@@ -475,7 +475,7 @@ iframe {
 }
 .education .item .university {
   font-family: "Lato", arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   color: #999;
   font-weight: 600;
   padding-left: 25px;
@@ -582,6 +582,11 @@ iframe {
   }
   .project-image {
     margin-bottom: 15px;
+  }
+
+  .js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full, 
+  .js-calendar-graph-svg {
+    display: none;
   }
 }
 /* Small devices (tablets, 768px and up) */
