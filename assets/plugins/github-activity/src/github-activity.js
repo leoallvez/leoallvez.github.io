@@ -278,29 +278,34 @@ function millisecondsToStr(milliseconds) {
   'use strict';
 
   function numberEnding(number) {
-    return (number > 1) ? 's ago' : ' ago';
+    return (number > 1) ? 's atrás' : ' atrás';
   }
+
+  function numberEndingMonths(number) {
+    return (number > 1) ? 'meses atrás' : 'mês atrás';
+  }
+  
   var temp = Math.floor(milliseconds / 1000);
 
   var years = Math.floor(temp / 31536000);
-  if (years) return years + ' year' + numberEnding(years);
+  if (years) return years + ' ano' + numberEnding(years);
 
   var months = Math.floor((temp %= 31536000) / 2592000);
-  if (months) return months + ' month' + numberEnding(months);
+  if (months) return months + numberEndingMonths(months);
 
   var days = Math.floor((temp %= 2592000) / 86400);
-  if (days) return days + ' day' + numberEnding(days);
+  if (days) return days + ' dia' + numberEnding(days);
 
   var hours = Math.floor((temp %= 86400) / 3600);
-  if (hours) return 'about ' + hours + ' hour' + numberEnding(hours);
+  if (hours) return 'cerca de ' + hours + ' hour' + numberEnding(hours);
 
   var minutes = Math.floor((temp %= 3600) / 60);
-  if (minutes) return minutes + ' minute' + numberEnding(minutes);
+  if (minutes) return minutes + ' minuto' + numberEnding(minutes);
 
   var seconds = temp % 60;
-  if (seconds) return seconds + ' second' + numberEnding(seconds);
+  if (seconds) return seconds + ' segundo' + numberEnding(seconds);
 
-  return 'just now';
+  return 'agora';
 }
 
 // Pluralizes a word, but only works when the word requires
@@ -331,7 +336,7 @@ var templates = {
                  <div class="gha-user-info{{withoutName}}">{{{userNameLink}}}<p>{{{userLink}}}</p></div>\
                  <div class="gha-gravatar">{{{gravatarLink}}}</div>\
                </div><div class="gha-push"></div>',
-  Footer: '<div class="gha-footer">Public Activity <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a>',
+  Footer: '<div class="gha-footer">Public Activity <a href="https://github.com/leoallvez" target="_blank">Ver mais</a>',
   NoActivity: '<div class="gha-info">This user does not have any public activity yet.</div>',
   UserNotFound: '<div class="gha-info">User {{username}} wasn\'t found.</div>',
   EventsNotFound: '<div class="gha-info">Events for user {{username}} not found.</div>',

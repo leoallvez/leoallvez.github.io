@@ -7,7 +7,6 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 /* ======= Base ======= */
-@import url(../../dist/github-calendar.css);
 @import url(https://cdn.rawgit.com/IonicaBizau/bag.css/gh-pages/dist/bag.fixed.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css);
@@ -560,7 +559,7 @@ iframe {
 .footer a {
   color: #fff;
 }
-.footer .fa-heart {
+.footer .fa-code {
   color: #fb866a;
 }
 /* Extra small devices (phones, less than 768px) */
@@ -583,10 +582,14 @@ iframe {
   .project-image {
     margin-bottom: 15px;
   }
-
   .js-calendar-graph.is-graph-loading.graph-canvas.calendar-graph.height-full, 
-  .js-calendar-graph-svg {
+  .js-calendar-graph-svg,
+  .contrib-footer,
+  .gha-gravatar {
     display: none;
+  }
+  .f4.text-normal.mb-2{
+    font-size: 0.9em;
   }
 }
 /* Small devices (tablets, 768px and up) */
