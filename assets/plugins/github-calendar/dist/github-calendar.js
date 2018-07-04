@@ -40,7 +40,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                 o = e("add-subtract-date"),
                 u = e("formatoid");
             t.exports = function (e, t, r) {
-                e = a(e), (r = r || {}).summary_text = r.summary_text || '<span>Resumo dos pull requests, issues abertas e commits realizadas por <a href="https://github.com/' + t + '" target="blank">@' + t + "</a>", !1 === r.global_stats && (e.style.minHeight = "175px"), r.proxy = r.proxy || function (e) {
+                e = a(e), (r = r || {}).summary_text = r.summary_text || '<span>Resumo dos pull requests, issues abertas e commits realizadas por <a href="https://github.com/' + t + '" target="blank">@' + t + "</a><br>", !1 === r.global_stats && (e.style.minHeight = "175px"), r.proxy = r.proxy || function (e) {
                     return "https://urlreq.appspot.com/req?method=GET&url=" + e
                 };
                 return function s() {
