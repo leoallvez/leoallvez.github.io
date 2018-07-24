@@ -602,3 +602,38 @@ iframe {
   }
 }
 
+.header {
+    padding: 30px 0;
+    background: #99d6ff;
+     border-top: 0px !important;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-inner{
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+
+.level-bar-inner {
+    height: 15px;
+    background: #31b0d5 !important;
+}
+
+a{
+  color: #31b0d5;
+}
+
+a:hover{
+  color: #008ae6;
+}
+
+.info .fa, .testimonials .item .quote .fa, .testimonials .item .quote  {
+  color: #008ae6 !important;
+  border-left-color:#008ae6 !important;
+}
+
+body {
+  background: #ccebff;
+}
+
