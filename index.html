@@ -34,6 +34,8 @@
 </head> 
 
 <body>
+    <div class="body-particles">
+    
     <header class="header">
         <div class="container">                       
             <img class="profile-image img-responsive pull-left" style="width:14em" src="assets/images/perfil.png" alt="Leonardo Pereira Alves" />
@@ -467,6 +469,10 @@
                 <small class="copyright"><i class="fa fa-code"></i> by <a href="https://www.linkedin.com/in/leoallvez/" target="_blank">Leonardo Pereira Alves</a></small>
         </div>
     </footer>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
@@ -479,8 +485,31 @@
     <!-- github activity plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!--particles-->
+    <script type="text/javascript" src="assets/js/particles.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>   
+    <!--stats.js-->
+    <script type="text/javascript" src="assets/js/stats.js"></script>
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
 </body>
 </html> 
 
