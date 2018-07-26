@@ -71,10 +71,10 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 320,
         "density": {
           "enable": true,
-          "value_area": 1800
+          "value_area": 2100
         }
       },
       "color": {
@@ -99,7 +99,7 @@ particlesJS('particles-js',
         "value": 0.5,
         "random": false,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
@@ -184,5 +184,4 @@ particlesJS('particles-js',
       "background_size": "cover"
     }
   }
-
 );
