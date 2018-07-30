@@ -725,7 +725,7 @@ body {
 
 .fl.spinner6{
   position: absolute; 
-  left: 50% !important; 
-  right: 50% !important; 
+  left: 45% !important;
+  right: 45% !important; 
   top: 50% !important;
 }
