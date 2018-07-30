@@ -21,8 +21,10 @@
         <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.min.css">
         <!-- github acitivity css -->
         <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.min.css">
+        <!-- fakeLoader css -->
+        <link id="theme-style" rel="stylesheet" href="assets/css/fakeLoader.css">
         <!-- Theme CSS -->  
-        <link id="theme-style" rel="stylesheet" href="assets/css/styles.min.css">
+        <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -31,341 +33,342 @@
     </head> 
 
     <body>
+        <div class="fakeloader"></div>
         <div class="body-particles">
-        
-        <header class="header">
-            <div class="container">                       
-                <img class="profile-image img-responsive pull-left" style="width:14em" src="assets/images/perfil.png" alt="Leonardo Pereira Alves" />
-                <div class="profile-content pull-left">
-                    <h1 class="name">Leonardo Pereira Alves</h1>
-                    <h2 class="desc">Desenvolvedor de Software</h2>   
-                    <ul class="social list-inline">
-                        <li><a href="https://www.linkedin.com/in/leoallvez/" target="_blank"><i class="fa fa-linkedin"></i></a></li>                 
-                        <li><a href="https://github.com/leoallvez" target="_blank"><i class="fa fa-github-alt"></i></a></li> 
-                        <li><a href="https://www.facebook.com/leoallvez" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    </ul> 
+            <header class="header">
+                <div class="container">                       
+                    <img class="profile-image img-responsive pull-left" style="width:14em" src="assets/images/perfil.png" alt="Leonardo Pereira Alves" />
+                    <div class="profile-content pull-left">
+                        <h1 class="name">Leonardo Pereira Alves</h1>
+                        <h2 class="desc">Desenvolvedor de Software</h2>   
+                        <ul class="social list-inline">
+                            <li><a href="https://www.linkedin.com/in/leoallvez/" target="_blank"><i class="fa fa-linkedin"></i></a></li>                 
+                            <li><a href="https://github.com/leoallvez" target="_blank"><i class="fa fa-github-alt"></i></a></li> 
+                            <li><a href="https://www.facebook.com/leoallvez" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </ul> 
+                    </div>
+                    <a class="btn btn-info pull-right" href="assets\document\CV-Leonardo-Pereira-Alves.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>Currículo</a>              
                 </div>
-                <a class="btn btn-info pull-right" href="assets\document\CV-Leonardo-Pereira-Alves.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>Currículo</a>              
-            </div>
-        </header>
-        
-        <div class="container sections-wrapper">
+            </header>
             
-            <div class="row">
-                <div class="primary col-md-4 col-sm-12 col-xs-12">
+            <div class="container sections-wrapper">
+                
+                <div class="row">
+                    <div class="primary col-md-4 col-sm-12 col-xs-12">
 
-                    <aside class="info aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Informações Básicas</h2>
-                            <div class="content">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <i class="fa fa-map-marker"></i>
-                                        <span class="sr-only">Endereço:</span>São Paulo, SP</li>
-                                    <li>
-                                        <i class="fa fa-envelope-o"></i>
-                                        <span class="sr-only">Email:</span>
-                                        <a href="mailto:leoallvez@hotmail.com">leoallvez@hotmail.com</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-whatsapp"></i>
-                                        <span class="sr-only">Cell:</span>
-                                        <a href="tel:+5511988109642">(11) 98810-9642</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </aside>
-
-                    <aside class="education aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Formação Acadêmica</h2>
-                            <div class="content">
-                                <div class="item">
-                                    <h3 class="title">
-                                        <i class="fa fa-graduation-cap"></i>
-                                        Sistemas de Informação
-                                    </h3>
-                                    <h4 class="university">
-                                        UMC - Universidade de Mogi das Cruzes<br><br>
-                                        <span class="year">Jan 2014 - Jan 2018</span>
-                                    </h4>
+                        <aside class="info aside section">
+                            <div class="section-inner">
+                                <h2 class="heading">Informações Básicas</h2>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>
+                                            <span class="sr-only">Endereço:</span>São Paulo, SP</li>
+                                        <li>
+                                            <i class="fa fa-envelope-o"></i>
+                                            <span class="sr-only">Email:</span>
+                                            <a href="mailto:leoallvez@hotmail.com">leoallvez@hotmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-whatsapp"></i>
+                                            <span class="sr-only">Cell:</span>
+                                            <a href="tel:+5511988109642">(11) 98810-9642</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </aside>
-                
-                    <aside class="skills aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Principais Tecnologias</h2>
-                            <div class="content">
-                                <p class="intro"></p>
-                
-                                <div class="skillset">
-                
+                        </aside>
+
+                        <aside class="education aside section">
+                            <div class="section-inner">
+                                <h2 class="heading">Formação Acadêmica</h2>
+                                <div class="content">
                                     <div class="item">
-                                        <h3 class="level-title">HTML, CSS e JavaScript
-                                            <span class="level-label">85%</span>
+                                        <h3 class="title">
+                                            <i class="fa fa-graduation-cap"></i>
+                                            Sistemas de Informação
                                         </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="85%">
-                                            </div>
-                                        </div>
+                                        <h4 class="university">
+                                            UMC - Universidade de Mogi das Cruzes<br><br>
+                                            <span class="year">Jan 2014 - Jan 2018</span>
+                                        </h4>
                                     </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">PHP - Laravel 5
-                                            <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"
-                                                title="You can use the tooltip to add more info...">85%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="85%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">Java - Android
-                                            <span class="level-label">75%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="75%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">C# - ASP.NET MVC 5
-                                            <span class="level-label">75%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="75%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">MySQL
-                                            <span class="level-label">65%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="65%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">SQL Server
-                                            <span class="level-label">65%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="65%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="item">
-                                        <h3 class="level-title">Python
-                                            <span class="level-label">40%</span>
-                                        </h3>
-                                        <div class="level-bar">
-                                            <div class="level-bar-inner" data-level="40%">
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <p>
-                                        <a class="more-link" href="https://github.com/leoallvez">
-                                            <i class="fa fa-external-link"></i>Veja mais no GitHub</a>
-                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </aside>
-                
-                    <aside class="languages aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Idiomas</h2>
-                            <div class="content">
-                                <ul class="list-unstyled">
-                                    <li class="item">
-                                        <span class="title">
-                                            <strong>Inglês:</strong>
-                                        </span>
-                                        <span class="level">Intermediário
-                                            <br class="visible-xs" />
-                                            <br>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half"></i>
-                                        </span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="title">
-                                            <strong>Português:</strong>
-                                        </span>
-                                        <span class="level">Nativo
-                                            <br class="visible-sm visible-xs" />
-                                            <br>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </aside>
-
-                    <aside class="testimonials aside section">
-                        <div class="section-inner">
-                            <h2 class="heading">Recomendações</h2>
-                            <div class="content">
-                                <div class="item">
-                                    <blockquote class="quote">
+                        </aside>
+                    
+                        <aside class="skills aside section">
+                            <div class="section-inner">
+                                <h2 class="heading">Principais Tecnologias</h2>
+                                <div class="content">
+                                    <p class="intro"></p>
+                    
+                                    <div class="skillset">
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">HTML, CSS e JavaScript
+                                                <span class="level-label">85%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="85%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">PHP - Laravel 5
+                                                <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"
+                                                    title="You can use the tooltip to add more info...">85%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="85%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">Java - Android
+                                                <span class="level-label">75%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="75%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">C# - ASP.NET MVC 5
+                                                <span class="level-label">75%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="75%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">MySQL
+                                                <span class="level-label">65%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="65%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">SQL Server
+                                                <span class="level-label">65%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="65%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="item">
+                                            <h3 class="level-title">Python
+                                                <span class="level-label">40%</span>
+                                            </h3>
+                                            <div class="level-bar">
+                                                <div class="level-bar-inner" data-level="40%">
+                                                </div>
+                                            </div>
+                                        </div>
+                    
                                         <p>
-                                            <i class="fa fa-quote-left"></i>Leonardo, estudamos juntos, é muito admirável pela sua responsabilidade, sua organização, respeitoso, como é caprichoso e
-                                            como cresceu o conhecimento em torno do tempo, tive o privilégio de compartilhar esses 4 anos de graduação de sistemas de
-                                            informação e ganhar um grande amigo.</p>
-                                    </blockquote>
-                                    <p class="source">
-                                        <span class="name"><a href="https://www.linkedin.com/in/camila-aukstakojis-72b4a212a">Camila Aukstakojis</a></span>
-                                        <br />
-                                        <span class="title">Analista de Sistema Jr na ERP Plus</span>
+                                            <a class="more-link" href="https://github.com/leoallvez">
+                                                <i class="fa fa-external-link"></i>Veja mais no GitHub</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    
+                        <aside class="languages aside section">
+                            <div class="section-inner">
+                                <h2 class="heading">Idiomas</h2>
+                                <div class="content">
+                                    <ul class="list-unstyled">
+                                        <li class="item">
+                                            <span class="title">
+                                                <strong>Inglês:</strong>
+                                            </span>
+                                            <span class="level">Intermediário
+                                                <br class="visible-xs" />
+                                                <br>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                        </li>
+                                        <li class="item">
+                                            <span class="title">
+                                                <strong>Português:</strong>
+                                            </span>
+                                            <span class="level">Nativo
+                                                <br class="visible-sm visible-xs" />
+                                                <br>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <aside class="testimonials aside section">
+                            <div class="section-inner">
+                                <h2 class="heading">Recomendações</h2>
+                                <div class="content">
+                                    <div class="item">
+                                        <blockquote class="quote">
+                                            <p>
+                                                <i class="fa fa-quote-left"></i>Leonardo, estudamos juntos, é muito admirável pela sua responsabilidade, sua organização, respeitoso, como é caprichoso e
+                                                como cresceu o conhecimento em torno do tempo, tive o privilégio de compartilhar esses 4 anos de graduação de sistemas de
+                                                informação e ganhar um grande amigo.</p>
+                                        </blockquote>
+                                        <p class="source">
+                                            <span class="name"><a href="https://www.linkedin.com/in/camila-aukstakojis-72b4a212a">Camila Aukstakojis</a></span>
+                                            <br />
+                                            <span class="title">Analista de Sistema Jr na ERP Plus</span>
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="item">
+                                        <blockquote class="quote">
+                                            <p>
+                                                <i class="fa fa-quote-left"></i>Um grande amigo, além de contribuir para o meu desenvolvimento como programador, é esforçado e faz de tudo para atingir seus
+                                                objetivos.</p>
+                                        </blockquote>
+                                        <p class="source">
+                                            <span class="name">
+                                                <a href="https://www.linkedin.com/in/camila-aukstakojis-72b4a212a">Ailton Junior</a>
+                                            </span>
+                                            <br />
+                                            <span class="title">Desenvolvedor Java Pleno na Avenue Code</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="secondary col-md-8 col-sm-12 col-xs-12">
+                        <section class="about section">
+                            <div class="section-inner">
+                                <h2 class="heading">Sobre mim</h2>
+                                <div class="content">
+                                    <p class="text-justify">Escolhi atuar no desenvolvimento de software pois é uma ótima área para estar em constante aprendizado, aprimoramento e também por ser fascinado de como a tecnologia é capaz de nós fazer ir mais longe, é muito gratificante ver o que antes era apenas ideia ganhar vida. Procuro sempre obter novos conhecimentos em livros, curso, projetos pessoais.</p>    
+                
+                                    <p class="text-justify"></p>
+                                
+                                </div>
+                            </div>               
+                        </section>
+
+                        <section class="experience section">
+                            <div class="section-inner">
+                                <h2 class="heading">Experiência Profissional</h2>
+                                <div class="content">
+                                    <div class="item">
+                                        <h3 class="title">Desenvolvedor de Software -
+                                            <span class="place">
+                                                <a href="https://www.clarifysistemas.com.br/" target="_blank">Clarify Sistemas</a>
+                                            </span>
+                                        </h3>
+                                        <p class="title">
+                                            <span class="year">Jan 2018 - o presente momento &#149; 6 meses</span>
+                                        </p>
+                                        <p class="text-justify">
+                                            Desenvolvimento de aplicações nas tecnologias C# ASP NET MVC5, PHP e Java para Android.
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <h3 class="title">Estágio em desenvolvimento de Software -
+                                            <span class="place">
+                                                <a href="https://www.clarifysistemas.com.br/" target="_blank">Clarify Sistemas</a>
+                                            </span>
+                                        </h3>
+                                        <p class="title">
+                                            <span class="year">Jan 2017 - Dez 2017 &#149; 12 meses</span>
+                                        </p>
+                                        <p class="text-justify">
+                                            Durante o estágio na Clarify Sistemas tive a oportunidade de auxiliar na implementação, manutenção e levantamento de requisitos
+                                            de diversos sistemas. Utilizando das linguagens PHP, C# e Java para a plataforma Android. Desenvolvemos
+                                            aplicativos para Android, auxiliamos no desenvolvimento de aplicações em C# e PHP, implementamos um serviço
+                                            web como o framework Laravel.
+                                        </p>
+                                    </div>
+                        
+                                    <div class="item">
+                                        <h3 class="title">Estágio em desenvolvimento de Software -
+                                            <span class="place">
+                                                <a href="https://cyber1.com.br">Cyber1 do Brasil Ltda</a>
+                                            </span>
+                                        </h3>
+                                        <p class="title">
+                                            <span class="year">Ago 2016 - Jan 2016 &#149; 4 meses</span>
+                                        </p>
+                                        <p class="text-justify">
+                                            Desenvolvimento com o framework PHP Laravel , o framework font-end Vue.Js eo banco MySQL. Levantamento de requisitos, modelagem
+                                            de dados, auxilio na implementação de uma nova versão do software para gestão da qualidade
+                                            <a href="https://qualitymanager.com.br" target="_blank">Quality Manager</a>, da qual te com mais de 10 anos de mercado. Remodelagem da base de dados, implementação
+                                            de novas funcionalidades e deploy em produção. Testes e documentação.
+                                        </p>
+                                    </div>
+
+                                    <div class="item">
+                                        <h3 class="title">Assistente da Qualidade -
+                                            <span class="place">
+                                                <a href="https://cyber1.com.br">Vida Tecnologia Biomedica</a>
+                                            </span>
+                                        </h3>
+                                        <p class="title">
+                                            <span class="year">Jan 2008 - Out 2015 &#149; 7 anos e 10 meses</span>
+                                        </p>
+                                        <p class="text-justify">
+                                            Auxiliar o gestores da nas rotinas referente a qualidade, testar, analisar matéria prima e material acabado, acompanhar
+                                            os processos se os da empresa estão conforme requisitos da qualidade, treinar colaboradores, documentar e arquivar os registros
+                                            referente ao controler de qualidade.
+                                        </p>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </section>
+                        <section class="github section">
+                            <div class="section-inner">
+                                <h2 class="heading">GitHub</h2>
+                                
+                                <div class="calendar">
+                                    <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner" />
+                                    <p class="spinner-text monospace">Carregando as contribuições de
+                                        <a href="https://github.com/leoallvez">@leoallvez</a>
                                     </p>
                                 </div>
                                 <br>
-                                <div class="item">
-                                    <blockquote class="quote">
-                                        <p>
-                                            <i class="fa fa-quote-left"></i>Um grande amigo, além de contribuir para o meu desenvolvimento como programador, é esforçado e faz de tudo para atingir seus
-                                            objetivos.</p>
-                                    </blockquote>
-                                    <p class="source">
-                                        <span class="name">
-                                            <a href="https://www.linkedin.com/in/camila-aukstakojis-72b4a212a">Ailton Junior</a>
-                                        </span>
-                                        <br />
-                                        <span class="title">Desenvolvedor Java Pleno na Avenue Code</span>
-                                    </p>
-                                </div>
+                                <div id="ghfeed" class="ghfeed"></div>
+                                
                             </div>
-                        </div>
-                    </aside>
-                </div>
-                <div class="secondary col-md-8 col-sm-12 col-xs-12">
-                    <section class="about section">
-                        <div class="section-inner">
-                            <h2 class="heading">Sobre mim</h2>
-                            <div class="content">
-                                <p class="text-justify">Escolhi atuar no desenvolvimento de software pois é uma ótima área para estar em constante aprendizado, aprimoramento e também por ser fascinado de como a tecnologia é capaz de nós fazer ir mais longe, é muito gratificante ver o que antes era apenas ideia ganhar vida. Procuro sempre obter novos conhecimentos em livros, curso, projetos pessoais.</p>    
-            
-                                <p class="text-justify"></p>
-                            
-                            </div>
-                        </div>               
-                    </section>
-
-                    <section class="experience section">
-                        <div class="section-inner">
-                            <h2 class="heading">Experiência Profissional</h2>
-                            <div class="content">
-                                <div class="item">
-                                    <h3 class="title">Desenvolvedor de Software -
-                                        <span class="place">
-                                            <a href="https://www.clarifysistemas.com.br/" target="_blank">Clarify Sistemas</a>
-                                        </span>
-                                    </h3>
-                                    <p class="title">
-                                        <span class="year">Jan 2018 - o presente momento &#149; 6 meses</span>
-                                    </p>
-                                    <p class="text-justify">
-                                        Desenvolvimento de aplicações nas tecnologias C# ASP NET MVC5, PHP e Java para Android.
-                                    </p>
-                                </div>
-                                <div class="item">
-                                    <h3 class="title">Estágio em desenvolvimento de Software -
-                                        <span class="place">
-                                            <a href="https://www.clarifysistemas.com.br/" target="_blank">Clarify Sistemas</a>
-                                        </span>
-                                    </h3>
-                                    <p class="title">
-                                        <span class="year">Jan 2017 - Dez 2017 &#149; 12 meses</span>
-                                    </p>
-                                    <p class="text-justify">
-                                        Durante o estágio na Clarify Sistemas tive a oportunidade de auxiliar na implementação, manutenção e levantamento de requisitos
-                                        de diversos sistemas. Utilizando das linguagens PHP, C# e Java para a plataforma Android. Desenvolvemos
-                                        aplicativos para Android, auxiliamos no desenvolvimento de aplicações em C# e PHP, implementamos um serviço
-                                        web como o framework Laravel.
-                                    </p>
-                                </div>
-                    
-                                <div class="item">
-                                    <h3 class="title">Estágio em desenvolvimento de Software -
-                                        <span class="place">
-                                            <a href="https://cyber1.com.br">Cyber1 do Brasil Ltda</a>
-                                        </span>
-                                    </h3>
-                                    <p class="title">
-                                        <span class="year">Ago 2016 - Jan 2016 &#149; 4 meses</span>
-                                    </p>
-                                    <p class="text-justify">
-                                        Desenvolvimento com o framework PHP Laravel , o framework font-end Vue.Js eo banco MySQL. Levantamento de requisitos, modelagem
-                                        de dados, auxilio na implementação de uma nova versão do software para gestão da qualidade
-                                        <a href="https://qualitymanager.com.br" target="_blank">Quality Manager</a>, da qual te com mais de 10 anos de mercado. Remodelagem da base de dados, implementação
-                                        de novas funcionalidades e deploy em produção. Testes e documentação.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <h3 class="title">Assistente da Qualidade -
-                                        <span class="place">
-                                            <a href="https://cyber1.com.br">Vida Tecnologia Biomedica</a>
-                                        </span>
-                                    </h3>
-                                    <p class="title">
-                                        <span class="year">Jan 2008 - Out 2015 &#149; 7 anos e 10 meses</span>
-                                    </p>
-                                    <p class="text-justify">
-                                        Auxiliar o gestores da nas rotinas referente a qualidade, testar, analisar matéria prima e material acabado, acompanhar
-                                        os processos se os da empresa estão conforme requisitos da qualidade, treinar colaboradores, documentar e arquivar os registros
-                                        referente ao controler de qualidade.
-                                    </p>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    </section>
-                    <section class="github section">
-                        <div class="section-inner">
-                            <h2 class="heading">GitHub</h2>
-                            
-                            <div class="calendar">
-                                <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner" />
-                                <p class="spinner-text monospace">Carregando as contribuições de
-                                    <a href="https://github.com/leoallvez">@leoallvez</a>
-                                </p>
-                            </div>
-                            <br>
-                            <div id="ghfeed" class="ghfeed"></div>
-                            
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <footer class="footer">
-            <div class="container text-center">
-            <small class="copyright"><i class="fa fa-code"></i> by <a href="https://www.linkedin.com/in/leoallvez/" target="_blank">Leonardo Pereira Alves</a></small>
-            </div>
-        </footer>
+            <footer class="footer">
+                <div class="container text-center">
+                <small class="copyright"><i class="fa fa-code"></i> by <a href="https://www.linkedin.com/in/leoallvez/" target="_blank">Leonardo Pereira Alves</a></small>
+                </div>
+            </footer>
         </div>
         <!-- particles.js container -->
+
         <div id="particles-js"></div>
-        <!-- Javascript -->          
+        <!-- jquery -->          
         <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js" ></script>
         <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <!-- github calendar plugin -->
@@ -373,9 +376,21 @@
         <!-- github activity plugin -->
         <script type="text/javascript" src="assets/plugins/github-activity/src/mustache.min.js" async></script>
         <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.min.js" async></script>
-        <!--particles-->
+        <!--particles js-->
         <script type="text/javascript" src="assets/js/particles.min.js" async></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="assets/js/main.min.js" async></script>   
+        <!--fakeLoader js-->
+        <script type="text/javascript" src="assets/js/fakeLoader.min.js"></script>
+        <!-- custom js-->
+        <script type="text/javascript" src="assets/js/main.min.js" async></script>
+        
+        <script>
+            $(document).ready(function () {
+                $(".fakeloader").fakeLoader({
+                    timeToHide: 3000,
+                    bgColor: "#008ae6",
+                    spinner: "spinner6"
+                });
+            });
+        </script>
     </body>
 </html> 
