@@ -383,12 +383,13 @@
         <script type="text/javascript" src="assets/js/main.min.js"></script>
         
         <script>
+            $(".fakeloader").fakeLoader({
+                timeToHide: 2000,
+                bgColor: "#008ae6",
+                spinner: "spinner6"
+            });
             $(document).ready(function () {
-                $(".fakeloader").fakeLoader({
-                    timeToHide: 2000,
-                    bgColor: "#008ae6",
-                    spinner: "spinner6"
-                });
+    
             });
         </script>
     </body>
