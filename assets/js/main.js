@@ -16,16 +16,10 @@ jQuery(document).ready(function($) {
 
   });
     /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    //GitHubCalendar(".calendar", "leoallvez");
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
     GitHubActivity.feed({ username: "leoallvez", selector: "#ghfeed" });
 });
 
-
 particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
